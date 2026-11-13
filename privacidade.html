@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade do aplicativo Instinto Curioso e suas permissões de acesso ao YouTube.">
+  <title>Política de Privacidade — Instinto Curioso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><div class="wrap header-inner"><a class="brand" href="./" aria-label="Instinto Curioso, página inicial"><span class="brand-mark" aria-hidden="true">✦</span><span>Instinto <strong>Curioso</strong></span></a><nav aria-label="Navegação principal"><a href="./">Início</a><a href="https://www.youtube.com/@instintocurioso_x4o" target="_blank" rel="noopener noreferrer">Canal ↗</a></nav></div></header>
+  <main id="conteudo" class="document wrap">
+    <p class="eyebrow">Privacidade e acesso ao YouTube</p>
+    <h1>Política de Privacidade</h1>
+    <p class="document-lead">Esta política descreve o uso das permissões do YouTube pelo aplicativo privado Instinto Curioso. Última atualização: 13 de novembro de 2026.</p>
+
+    <div class="document-grid"><aside class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#responsavel">Responsável e finalidade</a><a href="#permissoes">Permissões solicitadas</a><a href="#dados">Dados e uso</a><a href="#armazenamento">Armazenamento e retenção</a><a href="#revogacao">Revogação</a><a href="#site">Este site</a><a href="#contato">Contato</a></aside>
+      <div class="document-body">
+        <section id="responsavel"><h2>1. Responsável e finalidade</h2><p>Instinto Curioso é uma ferramenta privada usada pelo responsável pelo canal <a href="https://www.youtube.com/@instintocurioso_x4o" target="_blank" rel="noopener noreferrer">Instinto Curioso no YouTube</a> para conferir a conta autorizada e automatizar o envio de vídeos sobre animais, natureza e ciência. O aplicativo não oferece acesso a terceiros por este site.</p></section>
+        <section id="permissoes"><h2>2. Permissões solicitadas</h2><div class="scope"><code>youtube.readonly</code><p>Permite consultar a conta do YouTube autorizada. No fluxo de autorização, o aplicativo usa <code>channels.list(mine=true)</code> para conferir o identificador do canal antes de salvar o token.</p></div><div class="scope"><code>youtube.upload</code><p>Permite enviar vídeos ao canal autorizado por meio da API do YouTube quando a automação é executada. A página pública não envia vídeos.</p></div><p>Essas permissões são concedidas pelo titular da Conta Google na tela de consentimento do Google. O aplicativo não solicita a senha da Conta Google.</p></section>
+        <section id="dados"><h2>3. Dados acessados e uso</h2><p>A validação consulta o identificador e informações básicas do canal retornadas pela API do YouTube para confirmar que a conta autorizada administra o canal pretendido. Para um envio, a automação transmite ao YouTube o arquivo de vídeo e os dados necessários à publicação configurada. Não usamos as permissões para ler canais de visitantes deste site.</p><p>O token OAuth é trocado com os serviços do Google para autorizar essas operações. Ele não é publicado no repositório do site nem enviado aos visitantes.</p></section>
+        <section id="armazenamento"><h2>4. Armazenamento, proteção e retenção</h2><p>O arquivo de credenciais OAuth foi salvo no computador usado para a autorização e transferido por SSH para uma pasta privada de configuração na VPS que executa a automação, fora do repositório público. Na configuração verificada, a pasta da VPS tem permissão <code>700</code> e o token tem permissão <code>600</code>. O aplicativo pode atualizar o arquivo do token quando renova o acesso.</p><p>Não foi configurado um prazo de exclusão automática para esse arquivo. Ele permanece enquanto for necessário para a automação, até ser substituído, removido ou invalidado. O Google também pode expirar ou revogar o token segundo suas regras. A revogação impede novas chamadas autorizadas, mas a cópia do arquivo deve ser removida separadamente dos locais onde foi guardada.</p></section>
+        <section id="revogacao"><h2>5. Como revogar o acesso</h2><p>O titular pode revogar o acesso do Instinto Curioso nas <a href="https://myaccount.google.com/connections" target="_blank" rel="noopener noreferrer">conexões da Conta Google</a>. Também pode solicitar ao responsável pela automação que remova as cópias do token do computador de autorização e da VPS. Após a revogação, uma nova autorização será necessária para voltar a usar o aplicativo.</p></section>
+        <section id="site"><h2>6. Este site público</h2><p>Estas páginas são estáticas e hospedadas pelo GitHub Pages. Não têm formulário de login, cookies próprios nem código de análise adicionado pelo aplicativo. O GitHub pode tratar dados técnicos de acesso conforme sua <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">declaração de privacidade</a>. Visitar este site não concede acesso ao seu YouTube.</p></section>
+        <section id="contato"><h2>7. Contato</h2><p>Para dúvidas gerais, abra uma solicitação no <a href="https://github.com/thiaguin20/instinto-curioso-oauth-site/issues" target="_blank" rel="noopener noreferrer">repositório deste site</a>. Não inclua tokens, senhas ou informações pessoais em uma solicitação pública. Para um pedido privado, use o endereço de suporte apresentado na tela de consentimento OAuth do aplicativo.</p></section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Instinto Curioso</span><span><a href="./">Início</a> · <a href="privacidade.html">Política de Privacidade</a> · <a href="https://www.youtube.com/@instintocurioso_x4o" target="_blank" rel="noopener noreferrer">YouTube</a></span></div></footer>
+</body>
+</html>
